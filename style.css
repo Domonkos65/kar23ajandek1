@@ -1,0 +1,107 @@
+body{
+    color: #222;
+}
+.navigationbar{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 70px;
+    background-color: darkgreen;
+    border: 5px double red;
+    border-top: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 1px;
+}
+.navigationbar h1{
+    font-family:Permanent Marker, 'Times New Roman', Times, serif;
+    position: relative;
+    top: -1.5rem;
+    font-size: 300%;
+    letter-spacing: 3px;
+}
+.box p{
+    margin: 1rem;
+}
+#labm,#hatm{
+    font-family:Rubik Doodle Shadow, 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: 0;
+    color: black;
+}
+#labm,#hatm{
+    font-weight: bold;
+    font-size: 200%;
+    margin: 1rem;
+}
+.container{
+    display: grid;
+    grid-template-rows: 4rem auto auto auto auto 100px;
+    grid-template-columns:1fr 1fr;
+}
+.boxh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.box2{
+    grid-area: 2/1/3/2;
+}
+h2{
+    font-size: 3rem;
+    margin: 3rem 0 1rem;
+}
+p{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.vers p,h2{
+    text-align: center;
+}
+li{
+    font-size: 2rem;
+}
+.vers{
+    font-family: Pacifico, 'Times New Roman', Times, serif;
+    line-height: 40px;
+    font-size: 200%;
+    color: #222;
+}
+table{
+    margin: 3rem 0 1rem;
+    border: 10px solid #222;
+    border-collapse: collapse;
+}
+td,
+th {
+
+  border: 2px solid #222;
+  padding: 15px;
+  font-size: 175%;
+}
+th{
+      background-color: #7eddf7;
+}
+tr:nth-child(odd) {
+    background: #eef7ff;
+}
+.t4{
+    border-right: 5px solid #222;
+}
+.foot{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(169, 169, 169);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
