@@ -118,9 +118,12 @@ tr:nth-child(odd) {
     display: flex;
     justify-content: space-between;
 }
-.w3-xxxlarge{
-    border: 3px solid #222;
-    margin: 10px;
+span{
+    margin: 20px;
+}
+.icon:hover{
+    font-size: 150%;
+    border: 5px solid darkgreen ;
 }
 
 
