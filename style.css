@@ -19,25 +19,34 @@ body{
 .navigationbar h1{
     font-family:Permanent Marker, 'Times New Roman', Times, serif;
     position: relative;
-    top: -1.5rem;
+    top: -2.5rem;
     font-size: 300%;
     letter-spacing: 3px;
+}
+.szimb{
+    position: relative;
+    top: 1rem;
+    clip-path: circle(37% at 50% 50%);
 }
 .box p{
     margin: 1rem;
 }
 #labm,#hatm{
     font-family:Rubik Doodle Shadow, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 200%;
+    margin: 1rem;
+}
+#labm:hover,#hatm:hover{
+    font-size: 300%;
+    position: relative;
+    top: -0.5rem;
 }
 a{
     text-decoration: 0;
     color: black;
 }
-#labm,#hatm{
-    font-weight: bold;
-    font-size: 200%;
-    margin: 1rem;
-}
+
 .container{
     display: grid;
     grid-template-rows: 4rem auto auto auto auto 100px;
@@ -104,4 +113,82 @@ tr:nth-child(odd) {
     display: flex;
     justify-content:center;
     align-items: center;
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+}
+.w3-xxxlarge{
+    border: 3px solid #222;
+    margin: 10px;
+}
+
+
+@media screen and (max-width:1152px){
+    .navigationbar{
+        height: 205px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .navigationbar h1{
+        top: -1rem;
+        margin: 1rem;
+    }
+    #labm,#hatm{
+        margin: 0.3rem;
+    }
+}
+@media screen and (max-width:950px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .box1{
+        height: 205px;
+    }
+    #hát{
+        order: 1;
+    }
+    .box4{
+        order: 2;
+    }
+    #láb{
+        order: 3;
+    }
+    .box6{
+        order: 4;
+    }
+    .fizetes{
+        order: 5;
+    }
+    .box8{
+        order: 6;
+    }
+    .foot{
+        order: 7;
+    }
+}
+@media screen and (max-width:647.27px){
+    .navigationbar{
+        height: 260px;
+    }
+        .box1{
+            height: 260px;
+        }
+}
+@media screen and (max-width:477px){
+        .utol{
+            padding: 0;
+        }
+        .utol td,.utol th{
+            padding: 0;
+        }}
+@media screen and (max-width:384.13px){
+    .navigationbar{
+        height: 320px;
+    }
+        .box1{
+            height: 320px;
+        }
 }
