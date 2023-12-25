@@ -138,9 +138,10 @@ tr:nth-child(odd) {
     #labm,#hatm{
         margin: 0.3rem;
     }
-        .container{
+    .container{
         grid-template-rows: 205px auto auto auto auto 100px;
     }
+
 }
 @media screen and (max-width:950px){
     .container{
