@@ -71,7 +71,7 @@ a{
 .buddha p{
     padding: 10px;
     background-color: rgba(70, 70, 70, 0.5);
-    width: 45ch;
+    max-width: 45ch;
     font-family: Pacifico, 'Times New Roman', Times, serif;
     line-height: 45px;
     font-size: 200%;
@@ -87,14 +87,35 @@ a{
     position: relative;
     top: 1.15rem;
 }
+.box2{
+    grid-area: 3/1/4/2;
+    position: relative;
+}
 .box4{
     height: 430px;
     background: url(./00003_88072_600x314_normal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.box2{
-    grid-area: 3/1/4/2;
+#hát{
+    position: relative;
+    background-color: rgba(245, 223, 162,0.5);
+}
+#hát #gyertya{
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top: 0;  
+    font-size:  4rem;
+}
+#láb{
+    position: relative;
+}
+#láb p{
+    position: absolute;
+    right: 0;
+    top: 0;  
+    font-size:  4rem;
 }
 .regvers{
     height: 350px;
@@ -120,7 +141,9 @@ p{
 li{
     font-size: 2rem;
 }
-
+.box8{
+    background-color: rgba(245, 223, 162,0.5);
+}
 table{
     margin: 3rem 0 1rem;
     border: 10px solid #222;
@@ -139,8 +162,22 @@ th{
 tr:nth-child(odd) {
     background: #eef7ff;
 }
+tr:nth-child(even) {
+    background: white;
+}
 .t4{
     border-right: 5px solid #222;
+}
+.fizetes {
+        position: relative;
+        background-color: rgba(245, 223, 162,0.5);
+    
+    }
+.emoj{
+        position: absolute;
+        left: 0;
+        top: 0;  
+        font-size:  4rem;
 }
 .foot{
     margin: 0;
@@ -164,7 +201,7 @@ span{
 }
 
 
-@media screen and (max-width:1152px){
+@media screen and (max-width:1265px){
     .navigationbar{
         height: 205px;
         flex-direction: column;
@@ -179,7 +216,7 @@ span{
         margin: 0.3rem;
     }
     .container{
-        grid-template-rows: 205px 9rem auto auto auto auto 100px;
+        grid-template-rows: 205px auto auto auto auto auto 100px;
     }
 
 }
