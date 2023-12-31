@@ -1,6 +1,47 @@
 body{
     color: #222;
 }
+/*Typography*/
+.box p{
+    margin: 1rem;
+}
+a{
+    text-decoration: 0;
+    color: black;
+}
+h2{
+    font-size: 3rem;
+    margin: 3rem 0 1rem;
+    text-align: center;}
+p{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+li{
+    font-size: 2rem;
+}
+table{
+    margin: 3rem 0 1rem;
+    border: 10px solid #222;
+    border-collapse: collapse;
+}
+td,
+th {
+
+  border: 2px solid #222;
+  padding: 15px;
+  font-size: 175%;
+}
+th{
+      background-color: #7eddf7;
+}
+tr:nth-child(odd) {
+    background: #eef7ff;
+}
+tr:nth-child(even) {
+    background: white;
+}
+/*Navigation bar*/
 .navigationbar{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 70px;
@@ -28,25 +69,20 @@ body{
     top: 1rem;
     clip-path: circle(37% at 50% 50%);
 }
-.box p{
-    margin: 1rem;
-}
+
 #labm,#hatm{
     font-family:Rubik Doodle Shadow, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 200%;
     margin: 1rem;
 }
-#labm:hover,#hatm:hover{
-    font-size: 300%;
-    position: relative;
-    top: -0.5rem;
-}
-a{
-    text-decoration: 0;
-    color: black;
+#labm:hover,#hatm:hover{ 
+    animation:pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    transform: scale(1.5);
 }
 
+/*Grid*/
 .container{
     display: grid;
     grid-template-rows: 4rem 500px auto auto auto auto 100px;
@@ -57,10 +93,13 @@ a{
     align-items: center;
     justify-content: center;
 }
+/*Individual boxes*/
+/*Plus box*/
 .box1{
     grid-column-start: 1;
     grid-column-end: 3;
 }
+/*Buddha*/
 .buddha{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -87,36 +126,12 @@ a{
     position: relative;
     top: 1.15rem;
 }
+/*Box 2 (Boldog karácsonyt)*/
 .box2{
     grid-area: 3/1/4/2;
     position: relative;
 }
-.box4{
-    height: 430px;
-    background: url(./00003_88072_600x314_normal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#hát{
-    position: relative;
-    background-color: rgba(245, 223, 162,0.5);
-}
-#hát #gyertya{
-    list-style-type: none;
-    position: absolute;
-    left: 0;
-    top: 0;  
-    font-size:  4rem;
-}
-#láb{
-    position: relative;
-}
-#láb p{
-    position: absolute;
-    right: 0;
-    top: 0;  
-    font-size:  4rem;
-}
+/*Karácsonyi kép*/
 .regvers{
     height: 350px;
     margin-top: 10px;
@@ -124,61 +139,36 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*Box 4 (Hátmasszázs kép)*/
+.box4{
+    height: 430px;
+    background: url(./00003_88072_600x314_normal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Hát*/
+#hát{
+    background-color: rgba(245, 223, 162,0.5);
+}
+/*Box 6 (Lábmasszázs kép)*/
 .box6{
     height: 430px;
     background: url(./lab-3.jpg);
     background-repeat:no-repeat;
     background-size: cover;
 }
-h2{
-    font-size: 3rem;
-    margin: 3rem 0 1rem;
-    text-align: center;}
-p{
-    font-size: 2rem;
-    line-height: 1.5;
-}
-li{
-    font-size: 2rem;
-}
+/*Box 8 (Táblázat)*/
 .box8{
     background-color: rgba(245, 223, 162,0.5);
-}
-table{
-    margin: 3rem 0 1rem;
-    border: 10px solid #222;
-    border-collapse: collapse;
-}
-td,
-th {
-
-  border: 2px solid #222;
-  padding: 15px;
-  font-size: 175%;
-}
-th{
-      background-color: #7eddf7;
-}
-tr:nth-child(odd) {
-    background: #eef7ff;
-}
-tr:nth-child(even) {
-    background: white;
 }
 .t4{
     border-right: 5px solid #222;
 }
+/*Fizetés*/
 .fizetes {
-        position: relative;
         background-color: rgba(245, 223, 162,0.5);
-    
-    }
-.emoj{
-        position: absolute;
-        left: 0;
-        top: 0;  
-        font-size:  4rem;
 }
+/*Foter*/
 .foot{
     margin: 0;
     grid-column-start: 1;
@@ -188,6 +178,7 @@ tr:nth-child(even) {
     justify-content:center;
     align-items: center;
 }
+/*Abaut Me page*/
 .cont{
     display: flex;
     justify-content: space-between;
@@ -200,7 +191,7 @@ span{
     border: 5px solid darkgreen ;
 }
 
-
+/*Media queries*/
 @media screen and (max-width:1265px){
     .navigationbar{
         height: 205px;
